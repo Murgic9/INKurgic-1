@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'Img')));
+app.use(express.static(path.join(__dirname)));
 
 // Configuration
 const PAYSTACK_MODE = process.env.PAYSTACK_MODE || 'test';
